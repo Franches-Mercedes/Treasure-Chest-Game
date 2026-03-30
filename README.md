@@ -1,3 +1,31 @@
 # Treasure-Chest-Game
 
-This program creates a list of 15 random numbers ranging from 1 to 50, to represent treasure chest money. Each item in the list represents a treasure chest box. The list will have 16 items since the first item in the index has a value of 0. After the list has been given random numbers for indexes of [1] to [15], another variable will be used to generate a number from 1 to 15. This random number will be used to assign a -1 to the list using the random number as the index. Once the game begins, the user has 10 attempts to enter a valid treasure chest box (a number from 1 to 15). If the treasure chest contains money (positive number) then the monetary value will be added to an accumulator and the following output will be displayed to the user. If the user opens the treasure chest with a -1 then the game stops and the program displays that the user has lost the game :(. If after the 10th input the user has not opened a chest with a -1 then a message must be displayed that they have won the game and display the total amount of money that they have won!
+# Overview
+This Python program creates a treasure chest game using a list of 15 random numbers ranging from 1 to 50 to represent treasure chest money. The list contains 16 items total, where index 0 is always set to 0 and indexes 1 through 15 represent the playable treasure chests.
+
+One random chest is assigned a value of `-1`, which represents the losing chest. The user has 10 attempts to choose a valid chest number from 1 to 15.
+
+If the selected chest contains a positive value, that amount is added to the user’s total cash. If the user selects the chest containing `-1`, the game ends immediately and the user loses. If the user successfully opens 10 chests without selecting the chest containing the  `-1`, they win and the program displays the total amount of money earned.
+
+# Features
+- Generates random treasure chest values
+- Assigns one losing chest with a value of `-1`
+- Accepts user input for chest selections
+- Prevents invalid chest numbers
+- Tracks total money earned
+- Ends the game on a losing selection or after 10 successful attempts
+
+# Language Used
+- Python
+
+# Skills Demonstrated
+- Lists
+- Loops
+- Conditional statements
+- Random number generation
+- User input handling
+- Accumulators
+
+# How to Run
+Run the program in Python from the command line or in an IDE of preference
+
